@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="librerias">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/librerias/derby.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/librerias/opencsv-3.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/librerias/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/librerias/jcalendar-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/librerias/jcommon-1.0.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
