@@ -1,0 +1,289 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::p, par l {seq {comp lblDetalleSepare:::p:350:p, space :::p, comp jSeparator3:::::x}, comp jScrollPane4::::508:x, comp jScrollPane3:::::x, comp lblEstado::l:p:504:p}, space :::p, par l {comp jLabel2:::p:181:p, comp txtAbono::l:p:181:p, comp txtRestante::l:p:181:p, comp btnEntregar:::p:181:p, comp jLabel4::l:p:181:p, comp txtPagado::l:p:181:p, comp jLabel3::l:p:181:p, comp jLabel5::l:p:181:p, comp txtTotal::l:p:181:p, comp jButton2:::p:181:p, comp txtBusqueda::l:p:181:p, comp jButton1:::p:181:p, seq l {comp jLabel7:::p::p, space :p:72:p, comp jButton4:::p::p}, seq l {par t:::p {comp radioNombre:::::x, comp jLabel1::l:p:67:p, comp radioTel::l::77:x}, par l {seq l {space :p:25:p, comp jDateChooser1:::p::p}, seq t {space :::p, par l:::p {comp chkFecha:::::x, comp radioFac:::::x}, space :::p}}}}}}"
+			"$verticalGroup": "par l {seq {space :p::p, par l {seq l {comp jScrollPane3::::0:x, space :p:14:p}, seq l {par b {comp jLabel1::b:p::p, comp chkFecha::b:p::p}, space :::p, par l {comp radioTel:::p::p, comp jDateChooser1::l:p::p}, space :::p, par b {comp radioNombre::b:p::p, comp radioFac::b:p::p}, space u:::p, par b {comp jLabel7::b:p::p, comp jButton4::b:p::p}, space u:::p, comp txtBusqueda:::p::p, space :::p, comp jButton1:::p::p, space :::x}}, par l {comp jSeparator3:::p:10:p, comp lblDetalleSepare::l:p::p}, space :::p, par l {seq {comp jLabel2:::p::p, space :::p, comp txtAbono:::p::p, space :::p, comp jButton2:::p::p, space :::p, comp jLabel3:::p::p, space :::p, comp txtRestante:::p::p, space :::p, comp jLabel4:::p::p, space :::p, comp txtPagado:::p::p, space :::p, comp jLabel5:::p::p, space :::p, comp txtTotal:::p::p, space :::p, comp btnEntregar:::p::p}, seq {comp jScrollPane4::::0:x, space u:p::p, comp lblEstado:::p:29:p}}, space :p:0:p}}"
+		} ) {
+			name: "this"
+			"border": new javax.swing.border.BevelBorder( 0, null, null, null, null )
+			"minimumSize": new java.awt.Dimension( 713, 426 )
+			addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "formFocusGained", true ) )
+			addEvent( new FormEvent( "java.awt.event.ComponentListener", "componentShown", "formComponentShown", true ) )
+			addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "formKeyPressed", true ) )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane3"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tablaSepare"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "ID separe" )
+						add( "Nombre" )
+						add( "Apellido" )
+						add( "Telefono" )
+					}, new java.util.Vector {
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"selectionMode": 0
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tablaSepareMouseClicked", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "tablaSepareMouseEntered", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "jSeparator3"
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "txtBusqueda"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "txtBusquedaKeyReleased", true ) )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "txtBusquedaKeyTyped", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioNombre"
+				"text": "Nombre"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioNombreActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioTel"
+				"text": "Telefono"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioTelActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"text": "Buscar  por"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane4"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tablaDetalle"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "ID " )
+						add( "Producto" )
+						add( "Cantidad" )
+						add( "Valor unitario" )
+					}, new java.util.Vector {
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"selectionMode": 0
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tablaDetalleMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel2"
+				"text": "Abono"
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "txtAbono"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "txtAbonoActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "txtAbonoKeyTyped", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel3"
+				"text": "Restante"
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "txtRestante"
+				"editable": false
+				"border": new javax.swing.border.SoftBevelBorder( 1, null, null, null, null )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnEntregar"
+				"text": "Entregar 1 articulo"
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnEntregarActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel4"
+				"text": "Abonado"
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "txtPagado"
+				"editable": false
+				"border": new javax.swing.border.SoftBevelBorder( 1, null, null, null, null )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel5"
+				"text": "Total"
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "txtTotal"
+				"editable": false
+				"border": new javax.swing.border.SoftBevelBorder( 1, null, null, null, null )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "jButton2"
+				"text": "Abonar"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel7"
+				"text": "Buscar"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "jButton1"
+				"text": "Eliminar separe"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblEstado"
+				"text": "En espera"
+				addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "lblEstadoPropertyChange", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "jButton4"
+				"text": "Limpiar"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton4ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblDetalleSepare"
+				"text": "Detalle de artículos en separe"
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioFac"
+				"text": "# de factura"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioFacActionPerformed", true ) )
+			} )
+			add( new FormComponent( "com.toedter.calendar.JDateChooser" ) {
+				name: "jDateChooser1"
+				"dateFormatString": "yyyy-MM-dd"
+				"enabled": false
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "chkFecha"
+				"selected": true
+				"text": "Todas fechas"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "chkFechaActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+		add( new FormComponent( "javax.swing.JLabel" ) {
+			name: "jLabel6"
+			"text": "jLabel6"
+		} )
+	}
+}

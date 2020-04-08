@@ -1,0 +1,85 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l:::p {seq l {comp butAceptar:::p:90:p, space :::x, comp jButton2:::p:90:p}, seq t {comp jLabel4:::p:42:p, space :::p, comp localCombo:::::x}, comp jLabel2::l::0:x, comp jScrollPane1::l::0:x, comp jLabel3::l:::x, comp txt_pass::l:::x, seq {par l {comp jLabel1::l:p::p, comp jLabel5::l:p::p}, space :::x, comp jLabel6:::p::p}}, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {seq {comp jLabel1:::p::p, space u:::p, comp jLabel5:::p::p}, comp jLabel6:::p::p}, space u:::p, par b {comp jLabel4::b:p::p, comp localCombo::b:p::p}, space s:::p, comp jLabel2:::p::p, space u:::p, comp jScrollPane1:::p:121:p, space :p:13:p, comp jLabel3:::p::p, space u:::p, comp txt_pass:::p::p, space s:::p, par b {comp butAceptar::b:p::p, comp jButton2::b:p::p}, space :::x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 0
+			"resizable": false
+			"size": new java.awt.Dimension( 0, 0 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"text": "Bienvenido a Studio Facturador"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel2"
+				"text": "Seleccione su usuario y digite su contraseña"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "butAceptar"
+				"text": "Aceptar"
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "butAceptarActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "jButton2"
+				"text": "Cerrar"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton2ActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "userList"
+					"model": new javax.swing.DefaultListModel
+					auxiliary() {
+						"JavaCodeGenerator.typeParameters": "String"
+					}
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "userListValueChanged", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "txt_pass"
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "txt_passActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel3"
+				"text": "Contraseña"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel4"
+				"text": "Local:"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "localCombo"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Item 1"
+					addElement( "Item 1" )
+					addElement( "Item 2" )
+					addElement( "Item 3" )
+					addElement( "Item 4" )
+				}
+				auxiliary() {
+					"JavaCodeGenerator.typeParameters": "String"
+				}
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "localComboItemStateChanged", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "localComboActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel5"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/iconos/122049_40879_128.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel6"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/iconos/studio logo_32.png" )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 280, 455 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
