@@ -1,1 +1,1 @@
-# ContApp-studio
+Java Electronic Billing and Inventory Software
